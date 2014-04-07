@@ -7,7 +7,7 @@ public class PdfFinder {
     public static void main(String[] args) {
 	ArrayList<String> classes = new ArrayList<String>();
 	try {
-	    URL my_url = new URL("http://registrar.princeton.edu/course-offerings/search_results.xml?submit=Search&term=1144&coursetitle=&instructor=&distr_area=&level=&cat_number=&sort=SYN_PS_PU_ROXEN_SOC_VW.SUBJECT%2C+SYN_PS_PU_ROXEN_SOC_VW.CATALOG_NBR%2CSYN_PS_PU_ROXEN_SOC_VW.CLASS_SECTION%2CSYN_PS_PU_ROXEN_SOC_VW.CLASS_MTG_NBR");
+	    URL my_url = new URL("http://registrar.princeton.edu/course-offerings/search_results.xml?term=1152&coursetitle=&instructor=&distr_area=&level=&cat_number=&sort=SYN_PS_PU_ROXEN_SOC_VW.SUBJECT%2C+SYN_PS_PU_ROXEN_SOC_VW.CATALOG_NBR%2CSYN_PS_PU_ROXEN_SOC_VW.CLASS_SECTION%2CSYN_PS_PU_ROXEN_SOC_VW.CLASS_MTG_NBR&submit=Search");
 	    BufferedReader br = new BufferedReader(new InputStreamReader(my_url.openStream()));
 	    String strTemp = "";
 	    while (null != (strTemp = br.readLine())) {
